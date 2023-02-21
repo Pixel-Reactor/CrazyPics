@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Archivo&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.container{
+  width: 100%;
+  height: calc(100vh - 180px);
+  position: relative;
+}
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  font-family: 'Archivo', sans-serif;
+  color: gray;
+  text-transform: uppercase;
+  transform: rotate(180deg);
+  color: #1F1F1F;
+  filter: brightness(150%);
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer p {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  letter-spacing: 0.08em;
+  font-weight: 900;
+  color: #1F1F1F;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rabbit{
+  position: absolute;
+  left: 100px;
+  bottom:230px ;
+  z-index: 1000;
+  filter: brightness(90%);
+  transition: all 1s;
+}
+.rabbit:hover{
+  filter: brightness(120%);
+}
+.puerta{
+  width: 80px;
+  height:150px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 45px);
+  margin: auto;
+  z-index: 1000;
+}
+.light{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 50px;
+  height: 5px;
+  margin: 0px;
+  background-color: #ffffff;
+  transition: box-shadow 4s ease-out;
+}
+@keyframes interference {
+  0%{
+    transform: skew(0);
   }
-  to {
-    transform: rotate(360deg);
+  20%{
+    transform:skew(5deg, 3deg)
   }
+  21%{
+    transform:skew(0deg, 20deg)
+  }
+  21.5%{
+    transform:skew(15deg, 20deg)
+  }
+  22%{
+    transform:skew(0deg, 20deg)
+  }
+  23%{
+    transform:skew(0deg, 0deg)
+  }
+ 
+  60%{
+    filter: blur(10px);
+    background-color: green;
+    
+  }
+  60.5%{
+    filter: blur(0px);
+    background-color: red;
+    transform:skew(20deg, 0deg)
+  }
+  
+  61.5%{
+    filter: blur(0);
+    background-color: purple;
+   
+    
+    
+  }
+  62%{
+    filter: blur(0);
+    background-color: transparent;
+    transform:skew(0deg, 0deg)
+  }
+  70%{
+    transform:skew(0deg, 0deg)
+  }
+  80%{
+    transform:skew(0)
+  }
+  90%{
+    transform:skew(0)
+  }
+  100%{
+    transform:skew(0);
+    
+  }
+}
+@keyframes Gray {
+  0%{
+    filter:grayscale(0)
+  }
+  25%{
+    filter:grayscale(100%)
+  }
+  100%{
+    filter: grayscale(0);
+  }
+}
+
+@keyframes Bright {
+  0%{
+    filter:brightness(150%)
+  }
+  10%{
+    filter:brightness(100%)
+  }
+  20%{
+    filter:brightness(150%)
+  }
+  30%{
+    filter:brightness(100%)
+  }
+  40%{
+    filter:brightness(150%)
+  }
+  100%{
+    filter:brightness(100%)
+  }
+}
+@keyframes Calm {
+  from{
+    filter: brightness(95%);
+
+  }
+  to{
+    filter: brightness(100%);
+  }
+}
+@keyframes Stand {
+  0%{
+    background-color: red;
+    border-radius: 50%;
+  }
+  25%{
+    background-color: transparent;
+  }
+  50%{
+    background-color: rgb(58, 151, 34);
+    border-radius: 50%;
+  }
+  75%{
+    background-color: transparent;
+  }
+  90%{
+    background-color: red;
+    border-radius: 50%;
+  }
+  100%{
+   background-color: transparent;
+  }
+ 
 }
