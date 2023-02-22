@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/CrazyPics/static/css/main.55b3d202.css",
-    "main.js": "/CrazyPics/static/js/main.47ac6ed1.js",
+    "main.js": "/CrazyPics/static/js/main.ecddce70.js",
     "static/js/787.f889c91f.chunk.js": "/CrazyPics/static/js/787.f889c91f.chunk.js",
+    "static/media/conejo.gif": "/CrazyPics/static/media/conejo.6c3ba796faacc4f807bf.gif",
     "static/media/PUERTA.png": "/CrazyPics/static/media/PUERTA.d8bc2ffb9adbff7f6afd.png",
     "static/media/pablo 12.png": "/CrazyPics/static/media/pablo 12.59d16fb940ee0c788256.png",
     "static/media/DAYANI 2 1.png": "/CrazyPics/static/media/DAYANI 2 1.892cdd4b480a27ffb8f0.png",
@@ -29,14 +30,13 @@
     "static/media/f26.png": "/CrazyPics/static/media/f26.0c8204e2e0c0a114ed41.png",
     "static/media/greta 8 1.png": "/CrazyPics/static/media/greta 8 1.1c6c7454f6f1adbdf9df.png",
     "static/media/greta 3.png": "/CrazyPics/static/media/greta 3.0c7f205e45e23b77982e.png",
-    "static/media/rabbit.png": "/CrazyPics/static/media/rabbit.b5b72d8633f9ed2f16fd.png",
     "index.html": "/CrazyPics/index.html",
     "main.55b3d202.css.map": "/CrazyPics/static/css/main.55b3d202.css.map",
-    "main.47ac6ed1.js.map": "/CrazyPics/static/js/main.47ac6ed1.js.map",
+    "main.ecddce70.js.map": "/CrazyPics/static/js/main.ecddce70.js.map",
     "787.f889c91f.chunk.js.map": "/CrazyPics/static/js/787.f889c91f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55b3d202.css",
-    "static/js/main.47ac6ed1.js"
+    "static/js/main.ecddce70.js"
   ]
 }
