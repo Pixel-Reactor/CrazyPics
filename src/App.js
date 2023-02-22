@@ -16,7 +16,7 @@ const [AppStyle, setAppStyle] = useState({
 const HandlePerspective = () =>{
   setrotate(rotate+90);
   setrotateX(rotateX+180);
-  setAppStyle({...AppStyle,transform:`rotate(${rotate+90}deg) rotateX(${rotateX+180}deg)`})
+  setAppStyle({...AppStyle,transform:`rotate(${rotate+90}deg) rotateX(${rotateX+180}deg)`,width:'100%',height:'100vh'})
   console.log(rotate)
 }
   return (

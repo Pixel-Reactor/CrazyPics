@@ -58,14 +58,44 @@ footer p {
 }
 .rabbit{
   position: absolute;
-  left: 100px;
-  bottom:230px ;
+  left: 80px;
+  bottom:180px ;
   z-index: 1000;
   filter: brightness(90%);
-  transition: all 1s;
+  transition: all 5s;
+  animation: Float 5s infinite;
+  animation-delay: 2s;
 }
 .rabbit:hover{
   filter: brightness(120%);
+}
+.rainbow{
+  position: absolute;
+  bottom: 40%;
+  right: 20px;
+  margin: auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 4s;
+  animation: Float 10s infinite;
+  animation-delay: 3s;
+}
+.rainbow:hover{
+  filter: brightness(120%);
+}
+.market{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 4s;
+  animation: Float 12s infinite;
 }
 .puerta{
   width: 80px;
@@ -108,12 +138,12 @@ footer p {
  
   60%{
     filter: blur(10px);
-    background-color: green;
+    background-color:rgb(255, 157, 39);
     
   }
   60.5%{
     filter: blur(0px);
-    background-color: red;
+    background-color:rgb(24, 146, 255);
     transform:skew(20deg, 0deg)
   }
   
@@ -186,25 +216,46 @@ footer p {
 }
 @keyframes Stand {
   0%{
-    background-color: red;
-    border-radius: 50%;
+    background-color:rgb(24, 146, 255);
+    border-radius: 30%;
   }
   25%{
     background-color: transparent;
   }
   50%{
-    background-color: rgb(58, 151, 34);
-    border-radius: 50%;
+    background-color:rgb(255, 157, 39);
+    border-radius: 30%;
   }
   75%{
     background-color: transparent;
   }
   90%{
-    background-color: red;
-    border-radius: 50%;
+    background-color:rgb(24, 146, 255);
+    border-radius: 30%;
   }
   100%{
    background-color: transparent;
   }
  
+}
+
+@keyframes Float{
+  0%{
+    transform: translateX(0px) translateY(0px);
+  }
+  20%{
+    transform: translateX(20px) translateY(30px) rotate(20deg);
+  }
+  40%{
+    transform: translateX(20px) translateY(-20px);
+  }
+  60%{
+    transform: translateX(0px) translateY(10px) ;
+  }
+  80%{
+    transform: translateX(-10px) translateY(10px) rotate(-20deg);
+  }
+  100%{
+    transform: translateX(0px) translateY(0px);
+  }
 }

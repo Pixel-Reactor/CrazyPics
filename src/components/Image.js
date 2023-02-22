@@ -2,12 +2,13 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 
 const Image = (props) => {
-    const [animation, setanimation] = useState(['Stand 3s linear','Gray 5.5s linear','interference 2s linear','Bright 1s infinite','Calm 10s infinite']);
+    const [animation, setanimation] = useState(['Stand 3s linear','Gray 5.5s linear','interference 2s linear','Bright 2s infinite','Calm 10s infinite']);
+
    const [resize, setresize] = useState({
     heigth:window.innerHeight,
     width:window.innerWidth
    });
-   const [reset, setreset] = useState(0);
+
    const pic=props.img.slice(2);
     const [box, setbox] = useState({
         width:'80px',
@@ -23,7 +24,7 @@ const Image = (props) => {
         top:Math.floor(Math.random() * ((window.innerHeight - 280) - 1 + 1)) + 1,
         left:Math.floor(Math.random() * ((window.innerWidth - 80) - 10 + 1)) + 10,
         opacity:1,
-        transition:'all 1s',
+        transition:'all 4s',
         zIndex:Math.floor(Math.random() * 20)
     });
  
@@ -34,9 +35,10 @@ const Image = (props) => {
     
    
     //console.log()
-
+  
     useEffect(() => {
         setTimeout(() => {
+         
             const UpdateSize = () =>{
                 setresize({
                     width:window.innerWidth,
@@ -54,11 +56,12 @@ const Image = (props) => {
         left:left
       })
     
-    }, [resize]);
+    }, [resize,props.interval]);
+
     useEffect(() => {
        const Animation= setInterval(() => {
           setbox({...box,
-              animation:animation[Math.floor(Math.random() * 3)],
+              animation:animation[Math.floor(Math.random() * 5)],
               zIndex:Math.floor(Math.random() * 20)
           })
         
@@ -68,7 +71,7 @@ const Image = (props) => {
 
   return (
     <div>
-      <div style={box}><img  style={load}  src={require(`../images/${pic}`)} alt="hola" /></div>
+      <div style={box}><img  style={load}  src={require(`../images/${pic}`)} alt="img" /></div>
 
     </div>
   )
