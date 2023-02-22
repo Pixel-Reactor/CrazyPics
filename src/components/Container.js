@@ -31,7 +31,7 @@ const Container = () => {
             {HandleRender()}
 
             <div className='puerta'><img src={require('../CustomImgs/PUERTA.png')} /></div>
-            <div className='rabbit'><img width='130px' src={require('../CustomImgs/rabbit.png')} /></div>
+            <div className='rabbit'><img width='130px' src={require('../CustomImgs/conejo.gif')} /></div>
             <div className='rainbow'><img width='160px' src={require('../CustomImgs/METAVERSE.png')} /></div>
             <div className='market'><img width='160px' src={require('../CustomImgs/MRQUET PLACE.png')} /></div>
         </div>
