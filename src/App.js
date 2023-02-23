@@ -27,7 +27,7 @@ const HandlePerspective = () =>{
     <Container />
     <div className='light'></div>
     <footer>
-      <div className='cp' onClick={HandlePerspective}><p>change <br /> perspective</p></div>
+      <div className='cp' onClick={HandlePerspective}><p> change <br /> perspective</p></div>
     </footer>
     </div>
   );

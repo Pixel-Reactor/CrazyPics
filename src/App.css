@@ -9,7 +9,7 @@
 
 header {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,13 +34,14 @@ h1 {
 
 footer {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
+  
 }
 
 footer p {
@@ -81,6 +82,7 @@ footer p {
   transition: all 4s;
   animation: Float 10s infinite;
   animation-delay: 3s;
+  
 }
 .rainbow:hover{
   filter: brightness(120%);
