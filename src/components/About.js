@@ -20,26 +20,24 @@ const About = () => {
             <p className="abouttext">  COLLABORATORS</p>
             <p className='abouttext'>
               <ul className='artists'>
-                <li>@AMugia   / </li>
-                <li>@camilalemoine   /</li>
-                <li>@camilalemoine /</li>
-                <li>@Art_DayMunoz   /</li>
-                <li>@GRETA__REYNA   /</li>
-                <li> @nanyluzclara /</li>
-                <li> @AMugia / </li>
-                <li>@riogerz /</li>
-                <li>pablo</li>
+                <li><a href="https://twitter.com/AMugia" target='_blank'>@AMugia   /</a> </li>
+                <li><a href="https://twitter.com/camilalemoine" target='_blank'>@camilalemoine   /</a> </li>
+                <li><a href="https://twitter.com/Art_DayMunoz" target='_blank'>@Art_DayMunoz   /</a></li>
+                <li><a href="https://twitter.com/GRETA__REYNA" target='_blank'>@GRETA__REYNA   /</a></li>
+                <li><a href="https://twitter.com/nanyluzclara" target='_blank'>@nanyluzclara /</a></li>
+                <li><a href="https://twitter.com/riogerz" target='_blank'>@riogerz /</a></li>
+                <li><a href="" target='_blank'>pablo</a></li>
               </ul>
             </p>
             <p className="abouttext">FOUNDER</p>
-            <p className="abouttext">&#123; .,_,.-*~Aเⓢşa ~*-.,_,. &#125;
+            <p className="abouttext"><a href="https://linktr.ee/aissasantiso" target='_blank'>&#123; .,_,.-*~Aเⓢşa ~*-.,_,. &#125;</a>
             </p>
           </div>
         </div>
       </main>
       <footer className='footerabout'>
         <div>
-          <p>&#123; .,_,.-*~Aเⓢşa ~*-.,_,. &#125;</p>
+          <p ><a style={{color:'black'}} href="https://linktr.ee/aissasantiso" target='_blank'>&#123; .,_,.-*~Aเⓢşa ~*-.,_,. &#125;</a></p>
           <p>© &#123;Avatares &#125; 2023 All Rights Reserved.</p>
           <p>&#123;AVATARES &#125;</p>
         </div>

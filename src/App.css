@@ -6,6 +6,15 @@
   box-sizing: border-box;
   margin: 0;
 }
+a{
+  text-decoration: none;
+  color: whitesmoke
+}
+a:hover{
+  transition: all 1s;
+  font-size: 12px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 .app-container {
   width: 100%;
   min-height: 100vh;
@@ -88,6 +97,8 @@ header {
 }
 .footerabout div:nth-child(1) p{
   font-size: 10px;
+  width: 180px;
+
 } 
 .footerabout div:nth-child(2){
   display: flex;
@@ -104,9 +115,11 @@ header {
   justify-content: center;
   padding: 0;
 }
-.social li{
-  width: 50px;
+.social li {
+  width: 60px;
+  border-radius: 100%;
 }
+
 .footerabout p {
   border: 0;
   width: 150px;
@@ -223,6 +236,7 @@ footer p {
   justify-content: center;
   align-items: center;
 }
+
 @keyframes interference {
   0% {
     transform: skew(0);
