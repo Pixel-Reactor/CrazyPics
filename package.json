@@ -2,7 +2,7 @@
   "name": "interference",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pixel-reactor.github.io/CrazyPics/",
+  "homepage": "https://pixel-reactor.github.io/CrazyPics/#",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
