@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Image from './Image';
+import { Navigate, useNavigate ,Link} from 'react-router-dom';
 
 const Container = () => {
     const [imgs, setimgs] = useState([]);
@@ -37,6 +38,7 @@ const Container = () => {
         '28.jpg':'129',
     });
     
+    const navigate=useNavigate();
     useEffect(() => {
         setimgs(images.keys())
         const ResetInterval = () => {
@@ -44,6 +46,7 @@ const Container = () => {
                 setreset(reset + 1);
 
             }, 5000);
+            clearTimeout(TimeOut)
         }
         ResetInterval();
 
@@ -54,11 +57,12 @@ const Container = () => {
     }
     return (
         <div className='container'>
+            <div className="light"></div>
             {HandleRender()}
-            <div className='puerta'><img src={require('../CustomImgs/PUERTA.png')} /></div>
-            <div className='rabbit'><img width='130px' src={require('../CustomImgs/conejo.gif')} /></div>
-            <div className='rainbow'><img width='160px' src={require('../CustomImgs/METAVERSE.png')} /></div>
-            <div className='market'><img width='160px' src={require('../CustomImgs/MRQUET PLACE.png')} /></div>
+            <div className='puerta'><a href="https://linktr.ee/avatares" target='_blank'><img src={require('../CustomImgs/PUERTA.png')} /></a></div>
+            <div className='rabbit' onClick={()=>navigate('/about')}><img width='130px' src={require('../CustomImgs/conejo.gif')} /></div>
+            <div className='rainbow'><a href="https://www.spatial.io/s/AVATAR-CLOUD-SYSTEM-63cd5b157caee3124acbee09?share=891631547785675014" target='_blank'><img width='160px' src={require('../CustomImgs/METAVERSE.png')} /></a></div>
+            <div className='market'><a href="https://avatares.wlbl.xyz/" target='_blank'><img width='160px' src={require('../CustomImgs/MRQUET PLACE.png')} /></a></div>
         </div>
     )
 }

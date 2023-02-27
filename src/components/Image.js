@@ -3,19 +3,16 @@ import { useEffect, useState } from 'react';
 
 const Image = (props) => {
   
-  const [animation, setanimation] = useState(['Stand 3s linear', 'Gray 5.5s linear', 'interference 2s linear', 'Bright 2s infinite', 'Calm 10s infinite']);
+  const [animation, setanimation] = useState(['Stand 3s linear', 'Gray 5.5s linear', 'interference 2s linear', 'Bright 2s infinite', 'Calm 10s infinite','TurnRight 1s linear forwards','TurnLeft 1s linear forwards']);
   const [stop, setstop] = useState(false);
-  const [resize, setresize] = useState({
-    heigth: window.innerHeight,
-    width: window.innerWidth
-  });
+  const [resize, setresize] = useState({heigth: window.innerHeight,width: window.innerWidth});
 
   const pic = props.img.slice(2);
   const [box, setbox] = useState({
     width: '80px',
     height: '80px',
     opacity: '0',
-    animation: 'none',
+    animation: '',
     transform: 'translateZ(20px)',
     backgroundColor: 'transparent',
     display: 'flex',

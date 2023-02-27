@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Archivo&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Archivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Armata&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
   margin: 0;
 }
-
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header {
   width: 100%;
   height: 80px;
@@ -14,21 +20,115 @@ header {
   align-items: center;
   justify-content: center;
 }
-.container{
+.headabout {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  height: 80px;
+}
+.headabout h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.headabout p {
+  transform: rotate(180deg);
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.aboutcontainer {
+  width: 100%;
+  height: calc(100vh - 160px);
+  position: relative;
+  background-image: url("./CustomImgs/aboutbackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.aboutopacity {
+  width: 100%;
+  height: 100%;
+  background-color: #0f0303c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:30px;
+  overflow-y: scroll;
+}
+.abouttext {
+  color: rgba(255, 255, 255, 0.685);
+  font-family: "Armata", sans-serif;
+  font-size: 0.7em;
+  line-height: 2.3;
+}
+.artists {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.artists li {
+  margin-left: 5px;
+}
+.footerabout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  height: 80px;
+}
+.footerabout div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Armata", sans-serif;
+  transform: rotateX(180deg);
+}
+.footerabout div:nth-child(1) p{
+  font-size: 10px;
+} 
+.footerabout div:nth-child(2){
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 50px;
+}
+.social{
+  width: 200px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.social li{
+  width: 50px;
+}
+.footerabout p {
+  border: 0;
+  width: 150px;
+  text-transform: none;
+  text-align: center;
+}
+.container {
   width: 100%;
   height: calc(100vh - 180px);
   position: relative;
 }
+
 h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 35px;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: gray;
   text-transform: uppercase;
   transform: rotate(180deg);
-  color: #1F1F1F;
+  color: #1f1f1f;
   filter: brightness(150%);
 }
 
@@ -41,7 +141,6 @@ footer {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  
 }
 
 footer p {
@@ -50,27 +149,27 @@ footer p {
   border: 1px solid black;
   letter-spacing: 0.08em;
   font-weight: 900;
-  color: #1F1F1F;
+  color: #1f1f1f;
   font-size: 11px;
   line-height: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.rabbit{
+.rabbit {
   position: absolute;
   left: 80px;
-  bottom:180px ;
+  bottom: 180px;
   z-index: 1000;
   filter: brightness(90%);
   transition: all 5s;
   animation: Float 5s infinite;
   animation-delay: 2s;
 }
-.rabbit:hover{
+.rabbit:hover {
   filter: brightness(120%);
 }
-.rainbow{
+.rainbow {
   position: absolute;
   bottom: 40%;
   right: 20px;
@@ -82,12 +181,11 @@ footer p {
   transition: all 4s;
   animation: Float 10s infinite;
   animation-delay: 3s;
-  
 }
-.rainbow:hover{
+.rainbow:hover {
   filter: brightness(120%);
 }
-.market{
+.market {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -99,16 +197,16 @@ footer p {
   transition: all 4s;
   animation: Float 12s infinite;
 }
-.puerta{
+.puerta {
   width: 80px;
-  height:150px;
+  height: 150px;
   position: absolute;
   bottom: 20px;
   left: calc(50% - 45px);
   margin: auto;
   z-index: 1000;
 }
-.light{
+.light {
   position: absolute;
   top: 100px;
   left: 50px;
@@ -119,145 +217,159 @@ footer p {
   transition: box-shadow 4s ease-out;
 }
 @keyframes interference {
-  0%{
+  0% {
     transform: skew(0);
   }
-  20%{
-    transform:skew(5deg, 3deg)
+  20% {
+    transform: skew(5deg, 3deg);
   }
-  21%{
-    transform:skew(0deg, 20deg)
+  21% {
+    transform: skew(0deg, 20deg);
   }
-  21.5%{
-    transform:skew(15deg, 20deg)
+  21.5% {
+    transform: skew(15deg, 20deg);
   }
-  22%{
-    transform:skew(0deg, 20deg)
+  22% {
+    transform: skew(0deg, 20deg);
   }
-  23%{
-    transform:skew(0deg, 0deg)
+  23% {
+    transform: skew(0deg, 0deg);
   }
- 
-  60%{
+
+  60% {
     filter: blur(10px);
-    background-color:rgb(255, 157, 39);
-    
+    background-color: rgb(255, 157, 39);
   }
-  60.5%{
+  60.5% {
     filter: blur(0px);
-    background-color:rgb(24, 146, 255);
-    transform:skew(20deg, 0deg)
+    background-color: rgb(24, 146, 255);
+    transform: skew(20deg, 0deg);
   }
-  
-  61.5%{
+
+  61.5% {
     filter: blur(0);
     background-color: purple;
-   
-    
-    
   }
-  62%{
+  62% {
     filter: blur(0);
     background-color: transparent;
-    transform:skew(0deg, 0deg)
+    transform: skew(0deg, 0deg);
   }
-  70%{
-    transform:skew(0deg, 0deg)
+  70% {
+    transform: skew(0deg, 0deg);
   }
-  80%{
-    transform:skew(0)
+  80% {
+    transform: skew(0);
   }
-  90%{
-    transform:skew(0)
+  90% {
+    transform: skew(0);
   }
-  100%{
-    transform:skew(0);
-    
+  100% {
+    transform: skew(0);
   }
 }
 @keyframes Gray {
-  0%{
-    filter:grayscale(0)
+  0% {
+    filter: grayscale(0);
   }
-  25%{
-    filter:grayscale(100%)
+  25% {
+    filter: grayscale(100%);
   }
-  100%{
+  100% {
     filter: grayscale(0);
   }
 }
 
 @keyframes Bright {
-  0%{
-    filter:brightness(150%)
+  0% {
+    filter: brightness(150%);
   }
-  10%{
-    filter:brightness(100%)
+  10% {
+    filter: brightness(100%);
   }
-  20%{
-    filter:brightness(150%)
+  20% {
+    filter: brightness(150%);
   }
-  30%{
-    filter:brightness(100%)
+  30% {
+    filter: brightness(100%);
   }
-  40%{
-    filter:brightness(150%)
+  40% {
+    filter: brightness(150%);
   }
-  100%{
-    filter:brightness(100%)
+  100% {
+    filter: brightness(100%);
   }
 }
 @keyframes Calm {
-  from{
+  from {
     filter: brightness(95%);
-
   }
-  to{
+  to {
     filter: brightness(100%);
   }
 }
 @keyframes Stand {
-  0%{
-    background-color:rgb(24, 146, 255);
+  0% {
+    background-color: rgb(24, 146, 255);
     border-radius: 30%;
   }
-  25%{
+  25% {
     background-color: transparent;
   }
-  50%{
-    background-color:rgb(255, 157, 39);
+  50% {
+    background-color: rgb(255, 157, 39);
     border-radius: 30%;
   }
-  75%{
+  75% {
     background-color: transparent;
   }
-  90%{
-    background-color:rgb(24, 146, 255);
+  90% {
+    background-color: rgb(24, 146, 255);
     border-radius: 30%;
   }
-  100%{
-   background-color: transparent;
+  100% {
+    background-color: transparent;
   }
- 
 }
 
-@keyframes Float{
-  0%{
+@keyframes Float {
+  0% {
     transform: translateX(0px) translateY(0px);
   }
-  20%{
+  20% {
     transform: translateX(20px) translateY(30px) rotate(20deg);
   }
-  40%{
+  40% {
     transform: translateX(20px) translateY(-20px);
   }
-  60%{
-    transform: translateX(0px) translateY(10px) ;
+  60% {
+    transform: translateX(0px) translateY(10px);
   }
-  80%{
+  80% {
     transform: translateX(-10px) translateY(10px) rotate(-20deg);
   }
-  100%{
+  100% {
     transform: translateX(0px) translateY(0px);
+  }
+}
+@keyframes TurnRight {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes TurnLeft {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    height: calc(100vh - 180px);
   }
 }
