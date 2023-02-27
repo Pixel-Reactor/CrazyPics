@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CrazyPics/static/css/main.26727112.css",
-    "main.js": "/CrazyPics/static/js/main.5e9098d9.js",
+    "main.css": "/CrazyPics/static/css/main.236b8275.css",
+    "main.js": "/CrazyPics/static/js/main.1b22bb20.js",
     "static/js/787.f889c91f.chunk.js": "/CrazyPics/static/js/787.f889c91f.chunk.js",
     "static/media/aboutbackground.jpg": "/CrazyPics/static/media/aboutbackground.c128e57552e67a77b7f7.jpg",
     "static/media/conejo.gif": "/CrazyPics/static/media/conejo.6c3ba796faacc4f807bf.gif",
@@ -37,12 +37,12 @@
     "static/media/1.jpg": "/CrazyPics/static/media/1.9ccdd06411c4370a3936.jpg",
     "static/media/21.jpg": "/CrazyPics/static/media/21.c3b9178361d4a883a298.jpg",
     "index.html": "/CrazyPics/index.html",
-    "main.26727112.css.map": "/CrazyPics/static/css/main.26727112.css.map",
-    "main.5e9098d9.js.map": "/CrazyPics/static/js/main.5e9098d9.js.map",
+    "main.236b8275.css.map": "/CrazyPics/static/css/main.236b8275.css.map",
+    "main.1b22bb20.js.map": "/CrazyPics/static/js/main.1b22bb20.js.map",
     "787.f889c91f.chunk.js.map": "/CrazyPics/static/js/787.f889c91f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26727112.css",
-    "static/js/main.5e9098d9.js"
+    "static/css/main.236b8275.css",
+    "static/js/main.1b22bb20.js"
   ]
 }
