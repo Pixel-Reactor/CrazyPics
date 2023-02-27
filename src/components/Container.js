@@ -57,7 +57,6 @@ const Container = () => {
     }
     return (
         <div className='container'>
-            <div className="light"></div>
             {HandleRender()}
             <div className='puerta'><a href="https://linktr.ee/avatares" target='_blank'><img src={require('../CustomImgs/PUERTA.png')} /></a></div>
             <div className='rabbit' onClick={()=>navigate('/about')}><img width='130px' src={require('../CustomImgs/conejo.gif')} /></div>
