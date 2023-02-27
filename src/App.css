@@ -216,6 +216,13 @@ footer p {
   background-color: #ffffff;
   transition: box-shadow 4s ease-out;
 }
+.notfound{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @keyframes interference {
   0% {
     transform: skew(0);
