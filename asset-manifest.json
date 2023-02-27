@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/CrazyPics/static/css/main.6bee3b66.css",
-    "main.js": "/CrazyPics/static/js/main.cb8c2e0a.js",
+    "main.css": "/CrazyPics/static/css/main.5c3fff9e.css",
+    "main.js": "/CrazyPics/static/js/main.a9d3fca3.js",
     "static/js/787.f889c91f.chunk.js": "/CrazyPics/static/js/787.f889c91f.chunk.js",
+    "static/media/aboutbackground.jpg": "/CrazyPics/static/media/aboutbackground.c128e57552e67a77b7f7.jpg",
     "static/media/conejo.gif": "/CrazyPics/static/media/conejo.6c3ba796faacc4f807bf.gif",
     "static/media/PUERTA.png": "/CrazyPics/static/media/PUERTA.d8bc2ffb9adbff7f6afd.png",
     "static/media/MRQUET PLACE.png": "/CrazyPics/static/media/MRQUET PLACE.e43fd1b22b471443014a.png",
@@ -36,12 +37,12 @@
     "static/media/1.jpg": "/CrazyPics/static/media/1.9ccdd06411c4370a3936.jpg",
     "static/media/21.jpg": "/CrazyPics/static/media/21.c3b9178361d4a883a298.jpg",
     "index.html": "/CrazyPics/index.html",
-    "main.6bee3b66.css.map": "/CrazyPics/static/css/main.6bee3b66.css.map",
-    "main.cb8c2e0a.js.map": "/CrazyPics/static/js/main.cb8c2e0a.js.map",
+    "main.5c3fff9e.css.map": "/CrazyPics/static/css/main.5c3fff9e.css.map",
+    "main.a9d3fca3.js.map": "/CrazyPics/static/js/main.a9d3fca3.js.map",
     "787.f889c91f.chunk.js.map": "/CrazyPics/static/js/787.f889c91f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bee3b66.css",
-    "static/js/main.cb8c2e0a.js"
+    "static/css/main.5c3fff9e.css",
+    "static/js/main.a9d3fca3.js"
   ]
 }
