@@ -1,0 +1,162 @@
+
+@keyframes interference {
+    0% {
+      transform: skew(0);
+    }
+    20% {
+      transform: skew(5deg, 3deg);
+    }
+    21% {
+      transform: skew(0deg, 20deg);
+    }
+    21.5% {
+      transform: skew(15deg, 20deg);
+    }
+    22% {
+      transform: skew(0deg, 20deg);
+    }
+    23% {
+      transform: skew(0deg, 0deg);
+    }
+  
+    60% {
+      filter: blur(10px);
+      background-color: rgb(255, 157, 39);
+    }
+    60.5% {
+      filter: blur(0px);
+      background-color: rgb(24, 146, 255);
+      transform: skew(20deg, 0deg);
+    }
+  
+    61.5% {
+      filter: blur(0);
+      background-color: purple;
+    }
+    62% {
+      filter: blur(0);
+      background-color: transparent;
+      transform: skew(0deg, 0deg);
+    }
+    70% {
+      transform: skew(0deg, 0deg);
+    }
+    80% {
+      transform: skew(0);
+    }
+    90% {
+      transform: skew(0);
+    }
+    100% {
+      transform: skew(0);
+    }
+  }
+  @keyframes Gray {
+    0% {
+      filter: grayscale(0);
+    }
+    25% {
+      filter: grayscale(100%);
+    }
+    100% {
+      filter: grayscale(0);
+    }
+  }
+  
+  @keyframes Bright {
+    0% {
+      filter: brightness(150%);
+    }
+    10% {
+      filter: brightness(100%);
+    }
+    20% {
+      filter: brightness(150%);
+    }
+    30% {
+      filter: brightness(100%);
+    }
+    40% {
+      filter: brightness(150%);
+    }
+    100% {
+      filter: brightness(100%);
+    }
+  }
+  @keyframes Calm {
+    from {
+      filter: brightness(95%);
+    }
+    to {
+      filter: brightness(100%);
+    }
+  }
+  @keyframes Stand {
+    0% {
+      background-color: rgb(24, 146, 255);
+      border-radius: 30%;
+    }
+    25% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: rgb(255, 157, 39);
+      border-radius: 30%;
+    }
+    75% {
+      background-color: transparent;
+    }
+    90% {
+      background-color: rgb(24, 146, 255);
+      border-radius: 30%;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  @keyframes Float {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    20% {
+      transform: translateX(20px) translateY(30px) rotate(20deg);
+    }
+    40% {
+      transform: translateX(20px) translateY(-20px);
+    }
+    60% {
+      transform: translateX(0px) translateY(10px);
+    }
+    80% {
+      transform: translateX(-10px) translateY(10px) rotate(-20deg);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+  }
+  @keyframes TurnRight {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes TurnLeft {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(-90deg);
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+      height: calc(100vh - 180px);
+    }
+  }
+  @keyframes market{
+    from{left: 20px;}
+    to{left:70vw}
+  }

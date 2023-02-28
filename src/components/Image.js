@@ -6,14 +6,18 @@ const Image = (props) => {
   const [animation, setanimation] = useState(['Stand 3s linear', 'Gray 5.5s linear', 'interference 2s linear', 'Bright 2s infinite', 'Calm 10s infinite','TurnRight 1s linear forwards','TurnLeft 1s linear forwards']);
   const [stop, setstop] = useState(false);
   const [resize, setresize] = useState({heigth: window.innerHeight,width: window.innerWidth});
-
+  const [load, setload] = useState({
+    width: '97%',
+    height: '97%',
+    opacity:1
+  });
   const pic = props.img.slice(2);
   const [box, setbox] = useState({
     width: '80px',
     height: '80px',
     opacity: '0',
     animation: '',
-    transform: 'translateZ(20px)',
+    transform: '',
     backgroundColor: 'transparent',
     display: 'flex',
     justifyContent: 'center',
@@ -26,11 +30,7 @@ const Image = (props) => {
     zIndex: Math.floor(Math.random() * 20)
   });
 
-  const [load, setload] = useState({
-    width: '97%',
-    height: '97%',
-    opacity:1
-  });
+ 
 const [interval, setinterval] = useState(props.interval);
 const link=`https://avatares.wlbl.xyz/token/ETHEREUM:0xe17bbd7c962070bd6cbace985067c5020bc920a3:${props.link}`
 
@@ -42,16 +42,17 @@ if(!stop){
 }
 
 }, [props.interval]);
+
+
   const Move = () =>{
    const timeout= setTimeout(() => {
-    
       const UpdateSize = () => {
         setresize({
           width: window.innerWidth,
           heigth: window.innerHeight
         })
       }
-      window.addEventListener('resize', UpdateSize);
+      window.addEventListener('resize', UpdateSize());
     }, 2000);
 
     const top = Math.floor(Math.random() * ((resize.heigth - 280) - 1 + 1)) + 1;
@@ -63,12 +64,24 @@ if(!stop){
     })
     clearTimeout(timeout)
   }
+
   useEffect(() => {
-  stop ?  setbox({...box,top:'calc(50% - 40px)',left:'calc(50% - 40px)', transform:'scale(1.2)'}) : Move()
- 
-  }, [resize, interval, stop]);
+   Move()
+  }, [interval]);
+
+  
   useEffect(() => {
-    const Animation = setInterval(() => {
+    const n = props.img.slice(2,4)
+    if(n < 10){
+     setload({...load,transform:'rotateX(180deg)'})
+     console.log('primeros 9')
+    }else if(n < 19){
+     console.log('menor de 20')
+     setload({...load,transform:'rotate(90deg)'})
+     }else if(n < 28){
+      setload({...load,transform:'rotate(-90deg)'})
+     }
+    setInterval(() => {
       setbox({
         ...box,
         animation: animation[Math.floor(Math.random() * 5)],
@@ -78,13 +91,10 @@ if(!stop){
     }, Math.random() * (10000 - 5000) + 5000);
   }, []);
 
-  const HandleStop = () =>{
-    setstop(true);
-   
-  }
+ 
   return (
     <div>
-      <a href={link} target="_blank"><div style={box} onClick={HandleStop}><img onLoadedData={()=>setbox({...box,opacity:1})} style={load} src={require(`../images/${pic}`)} alt="img" /></div></a>
+      <a href={link} target="_blank"><div style={box} ><img onLoadedData={()=>setbox({...box,opacity:1})} style={load} src={require(`../images/${pic}`)} alt="img" /></div></a>
 
     </div>
   )
