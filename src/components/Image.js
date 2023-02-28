@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 
 const Image = (props) => {
   
-  const [animation, setanimation] = useState(['Stand 3s linear', 'Gray 5.5s linear', 'interference 2s linear', 'Bright 2s infinite', 'Calm 10s infinite','TurnRight 1s linear forwards','TurnLeft 1s linear forwards']);
-  const [stop, setstop] = useState(false);
+  const [animation] = useState(['Stand 3s linear', 'Gray 5.5s linear', 'interference 2s linear', 'Bright 2s infinite', 'Calm 10s infinite','TurnRight 1s linear forwards','TurnLeft 1s linear forwards']);
+  const [stop] = useState(false);
   const [resize, setresize] = useState({heigth: window.innerHeight,width: window.innerWidth});
   const [load, setload] = useState({
     width: '97%',
@@ -15,7 +15,6 @@ const Image = (props) => {
   const [box, setbox] = useState({
     width: '80px',
     height: '80px',
-    opacity: '0',
     animation: '',
     transform: '',
     backgroundColor: 'transparent',

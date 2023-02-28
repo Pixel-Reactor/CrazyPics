@@ -1,22 +1,22 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Image from './Image';
-import { Navigate, useNavigate, Link } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 const Container = (props) => {
     const [imgs, setimgs] = useState([]);
     const [reset, setreset] = useState(0);
     const images = require.context('../images');
     const [link, setlink] = useState({
-        '1.jpg': '151',
-        '2.jpg': '148',
-        '3.jpg': '76',
-        '4.jpg': '1',
-        '5.jpg': '6',
-        '6.jpg': '101',
-        '7.jpg': '19',
-        '8.jpg': '26',
-        '9.jpg': '45',
+        '01.jpg': '151',
+        '02.jpg': '148',
+        '03.jpg': '76',
+        '04.jpg': '1',
+        '05.jpg': '6',
+        '06.jpg': '101',
+        '07.jpg': '19',
+        '08.jpg': '26',
+        '09.jpg': '45',
         '10.jpg': '50',
         '11.jpg': '72',
         '12.jpg': '73',
