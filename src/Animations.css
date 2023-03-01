@@ -151,12 +151,17 @@
       transform: rotate(-90deg);
     }
   }
+  @keyframes rabbit{
+    from{left: 70vw;}
+    to{left:30px}
+  }
+  @keyframes market{
+    from{left:20px;}
+    to{left:70vw}
+  }
   @media only screen and (max-width: 600px) {
     .container {
       height: calc(100vh - 180px);
     }
   }
-  @keyframes market{
-    from{left: 20px;}
-    to{left:70vw}
-  }
+ 

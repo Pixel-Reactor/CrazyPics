@@ -175,8 +175,11 @@ footer p {
   z-index: 1000;
   filter: brightness(90%);
   transition: all 5s;
-  animation: Float 5s infinite;
-  animation-delay: 2s;
+  animation-name:Float ,rabbit ;
+  animation-duration:5s , 7s ;
+  animation-iteration-count:infinite, infinite ;
+  animation-direction: alternate ;
+  border-radius: 100%;
 }
 .rabbit:hover {
   filter: brightness(120%);
