@@ -3,7 +3,7 @@
 
 Made with ##react 
 
-###Content to have a look for Developers.
+### Content to have a look for Developers.
 
 ## Rendering methods with custom animation and delays
 
