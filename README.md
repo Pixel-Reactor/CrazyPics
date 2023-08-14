@@ -1,7 +1,8 @@
 
 ## Art Selling WebSite 
 
-Made with ## React js. 
+Made with :
+## React js. 
 
 ### Content to have a look for Developers :
 
