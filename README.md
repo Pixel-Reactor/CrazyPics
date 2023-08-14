@@ -6,6 +6,6 @@ Made with :
 
 ## Content to have a look for Developers :
 
-### Rendering methods with custom animation and delays
+### - Rendering methods with custom animation and delays
 
-### Dinamic Styles changing on the main file App
+### - Dinamic Styles changing on the main file App
