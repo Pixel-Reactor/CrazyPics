@@ -1,9 +1,10 @@
 
 ## Art Selling WebSite 
 
-Made with ##react 
+Made with ## React js. 
 
-### Content to have a look for Developers.
+### Content to have a look for Developers :
 
 ## Rendering methods with custom animation and delays
 
+## Dinamic Styles changing on the main file App
